@@ -1,0 +1,10 @@
+.main_title{
+    font-size : 50px;
+    text-align : center;
+}
+.to_login{
+    text-align : right;
+}
+.upbar{
+    border-bottom : 1px solid black;
+}
