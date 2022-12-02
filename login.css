@@ -1,17 +1,48 @@
+.upbar{
+    border-bottom : 5px solid black;
+}
+.site_name {
+    position : relative;
+    top  : -50px;
+    left : 50px;
+}
 .log_area {
+    position : relative;
     border :2px solid black; padding : 10px;
-    width : 400px;
-    height :400px;
-    transform : translate(550px,0);
+    width : 300px;
+    height :300px;
+    left : 600px;
+    top : -70px;
 }
 .log_title{
     font-size : 50px;
     text-align : center;
 }
 #input-log_id {
-    height : 40px;  padding : 10px;
-
+    height : 30px;  padding : 5px;
 }
 #input-log_pw {
-    height : 40px;  padding : 10px;
+    height : 30px;  padding : 5px;
+}
+.screen_id {
+    padding : 4.5px;
+}
+.member {
+    position : relative;
+    left : 600px;
+    top : -70px;
+}
+.info {
+    position : relative;
+    left : 900px;
+    top  : -15px;
+}
+.join {
+    position : relative;
+    left  :500px;
+    top : 5px;
+}
+a {
+    text-decoration: none;
+    color : inherit;
 }
