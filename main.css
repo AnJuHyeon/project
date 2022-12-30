@@ -3,13 +3,35 @@
     text-align : center;
 }
 .to_login{
-    text-align : right;
-
+    float : right;
+    padding-right :100px;
 }
 .upbar{
+    width : 100%;
     border-bottom : 3px solid black;
+    height : 26px;
 }
 a {
     text-decoration: none;
     color : inherit;
+}
+.to_useguide {
+    float : left; 
+    position : relative;
+    padding-left : 200px;   
+}
+.to_join {
+    float : right;
+    position : relative;
+    padding-right : 235px;
+}
+.to_review {
+    float : right;
+    position  : relative;
+    padding-right : 203px;    
+}
+.write_review {
+    float : left;
+    position : relative;
+    padding-left : 203px;
 }
