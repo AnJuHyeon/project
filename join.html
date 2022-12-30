@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet", href="join.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+<style>
+    body {background-color : aqua;}
+</style>
+
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1 class="hello">
+                <p>Mat Eat Da 회원가입</p>
+            </h1>
+        </div>
+    </header>
+    <div id="container">
+        <div class="group">
+            <div class="userInput">
+                <h4 class="list">아이디<span id="IdError"></span></h4>
+                <span class="box int_id"><input type="text" id="id" class="int check" 
+                    maxlength="20"></span>
+            </div>
+            <div class="userInput">
+                <h4 class="list">비밀번호<span id="pwError"></span></h4>
+                <span class="box int_id"><input type="password" id="pw"
+                    class="int check" maxlength="20"></span>
+            </div>
+            <div class="userInput">
+                <h4 class="list">비밀번호 재확인 <span id="pwCheckError"></span></h4>
+                <span class="box int_id"><input type="password" id="pwCheck" class="int check"
+                    maxlength="20"></span>
+            </div>
+        </div>
+        <div class="group">
+            <div class="userInput">
+                <h4>이름<span id="nameError"></span></h4>
+                <span class="box int_id"><input type="text" id="name" class="int check"
+                    maxlength="20"></span>
+            </div>
+            <div class="userInput">
+                <h4 class="list">자택주소 <span id="addressError"></span></h4>
+                <div id="address" class="int_id">
+                    <input type="text" id="sample4_postcode" class="d_form mini line addressCheck" placeholder="우편번호" readonly>
+                  <input type="button" id="addressButton" class="d_form mini" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" readonly>
+                  </span>
+                  <input type="text" id="sample4_roadAddress" class="d_form mini line" placeholder="도로명주소" readonly>
+                  <input type="text" id="sample4_jibunAddress" class="d_form mini line" placeholder="지번주소" readonly>
+                  <span id="guide" style="color:#999;display:none"></span>
+                  <input type="text" id="sample4_extraAddress" class="d_form mini line" placeholder="참고주소" readonly>
+                  <input type="text" id="sample4_detailAddress" class="d_form mini line addressCheck" placeholder="상세주소" >
+                </div>
+            </div>
+        </div>
+        <div class="btn_area">
+            <input type="submit" value="가입하기" id="btnJoin">
+        </div>
+    </div>
+</body>
+</html>
