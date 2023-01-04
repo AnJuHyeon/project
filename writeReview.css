@@ -1,0 +1,46 @@
+h1{
+    text-align : center;
+}
+a {
+    text-decoration: none;
+    color : inherit;
+}
+.container{
+    position : relative;
+    border :2px solid black; padding : 10px;
+    width : 500px;
+    height :500px;
+    left : 500px;
+    top : -70px;
+}
+.upbar{
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 50px;
+    background-color: lavender; 
+}
+body{
+    margin :0%;
+}
+.to_join {
+    float : right;
+    position : relative;
+    padding-right : 235px;
+    top : 15px;
+}
+.to_useguide {
+    float : left; 
+    position : relative;
+    padding-left : 200px;   
+    top : 15px;
+}
+#area { 
+    position : relative;
+    top: 420px;
+    left:50px;
+}
+#food{
+    position: relative;
+    top: 400px;
+    left: -36.5px;
+}
