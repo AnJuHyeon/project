@@ -1,7 +1,22 @@
+
+
 h1 {
     text-align : center;
 }
 a {
     text-decoration: none;
     color : inherit;
+}
+.guide {
+    font-size : 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.title{
+    font-family: 'Song Myung', serif;
+        font-size : 40px;
+}
+.guide { 
+    font-family: 'Song Myung', serif;
+    font-size : 28px;
 }
