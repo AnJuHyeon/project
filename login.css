@@ -1,5 +1,7 @@
 .upbar{
-    border-bottom : 5px solid black;
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 26px;
 }
 .site_name {
     position : relative;
@@ -35,12 +37,11 @@
 .info {
     position : relative;
     left : 900px;
-    top  : -15px;
 }
 .join {
+    float : left;
     position : relative;
     left  :500px;
-    top : 5px;
 }
 a {
     text-decoration: none;
