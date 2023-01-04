@@ -29,3 +29,43 @@ a {
     text-decoration: none;
     color : inherit;
 }
+.seoul {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 7px;
+}
+.suwon{
+    position: relative;
+    width: 200px;
+    left: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 7px;
+}
+.jeju{
+    position: relative;
+    width: 100px;
+    height:200px;
+    left: 1000px;
+    top : -200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 7px;
+}
+.jinju {
+    position: relative;
+    width: 100px;
+    left: 1000px;
+    top : -200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 7px;
+}
