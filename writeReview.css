@@ -44,3 +44,29 @@ body{
     top: 400px;
     left: -36.5px;
 }
+#myform fieldset {
+    display  : inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    border  :0;
+}
+#myform input[type="radio"] {
+    display : none;
+}
+#myform label {
+    font-size  :1em;
+     color : transparent;  /*기존 이모지의 색깔 제거 */
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#myform label:hover{
+    text-shadow: 0 0 0 yellow; /* 마우스 호버 */
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 yellow; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform fieldset{
+    display: inline-block; 
+    direction: rtl; /* 이모지 순서 반전 , (right to left) */
+    border: 0;
+}
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 yellow; /* 마우스 클릭 체크 */
+}
