@@ -4,26 +4,35 @@ h1{
 .to_useguide {
     float : left; 
     position : relative;
-    padding-left : 100px;   
+    padding-left : 100px;
+    top : 15px;   
 }
 .to_login{
     float : right;
+    position : relative;
     padding-right :100px;
+    top : 15px;
 }
 .upbar{
     width : 100%;
     border-bottom : 3px solid black;
-    height : 26px;
+    height : 50px;
+    background-color: lavender; 
+}
+body{
+    margin : 0%;
 }
 .write_review {
     float : left;
     position : relative;
     padding-left : 220px;
+    top : 15px;
 }
 .to_join {
     float : right;
     position : relative;
     padding-right : 235px;
+    top : 15px;
 }
 a {
     text-decoration: none;
