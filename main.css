@@ -1,7 +1,7 @@
 .to_login{
     float : right;
     position : relative;
-    padding-right :100px;
+    padding-right :7%;
     top : 15px; 
 }
 .upbar{
@@ -17,25 +17,25 @@ a {
 .to_useguide {
     float : left; 
     position : relative;
-    padding-left : 200px;
+    padding-left : 15%;
     top : 15px;   
 }
 .to_join {
     float : right;
     position : relative;
-    padding-right : 235px;
+    padding-right : 15%;
     top : 15px;
 }
 .to_review {
     float : right;
     position  : relative;
-    padding-right : 203px;
+    padding-right : 15%;
     top : 15px;    
 }
 .write_review {
     float : left;
     position : relative;
-    padding-left : 203px;
+    padding-left : 12%;
     top : 15px;
 }
 body{
@@ -60,4 +60,9 @@ body{
     top : 35%;
     left : 30%;
 
+}
+.site_name {
+    position : relative;
+    top  : -300px;
+    left : 30px;
 }
