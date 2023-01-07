@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인페이지</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+</style>
 </head>
 <body>
     <header class="upbar">
         <nav class="join"><a href="join.html">회원 가입</a></nav>
         <nav class="info"><a href="use guide.html">이용 안내</a></nav>
     </header>
-    <h1 class="log_title">로그인 페이지</h1>
+    <h1 class="log_title">Mat Eat Da</h1>
     <h2 class="site_name"><a href="project.html">Mat<br>Eat<br>Da </a></h2>
-    <div class="member">회원 가입</div>
+    <div class="member"><a href="join.html">회원 가입<a></div>
 <div class="log_area">
     <div class="id_area">
-        <label class="screen_id" for="input-log_id">ID : </label>
-        <input id="input-log_id" placeholder="아이디" type="text" name="log_id">
+        <input id="input-log_id" placeholder="아이디 또는 이메일" type="text" name="log_id">
     </div>
     <div class="pw_area">
-        <label class="screen_pw" for="input-log_pw">PW : </label>
         <input id="input-log_pw" placeholder="비밀 번호" type="text" name="log_pw">
+    </div>
+    <div class="login">
+    <button type="submit" class="loginBtn">로그인</button>
     </div>
 </div>
 </body>
