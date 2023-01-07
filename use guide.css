@@ -20,3 +20,10 @@ a {
     font-family: 'Song Myung', serif;
     font-size : 28px;
 }
+body {
+    background-color: antiquewhite;
+}
+.site_name{
+    position : relative;
+    left : 30px;
+}
