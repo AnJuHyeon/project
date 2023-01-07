@@ -1,7 +1,11 @@
 .upbar{
-    width : 100%;
-    border-bottom : 3px solid black;
-    height : 26px;
+        width : 100%;
+        border-bottom : 3px solid black;
+        height : 50px;
+        background-color: lavender; 
+}
+body{
+    margin : 0%;
 }
 .site_name {
     position : relative;
@@ -10,40 +14,68 @@
 }
 .log_area {
     position : relative;
-    border :2px solid black; padding : 10px;
-    width : 300px;
-    height :300px;
-    left : 600px;
+    border :2px solid grey; padding : 10px;
+    width : 450px;
+    height :450px;
+    left : 33%;
     top : -70px;
 }
 .log_title{
-    font-size : 50px;
+    font-size : 40px;
     text-align : center;
+    font-family: 'Song Myung', serif;
 }
 #input-log_id {
     height : 30px;  padding : 5px;
+    width : 85%;
+    border : 0;
+    border-bottom: 2px solid black;
+    outline: none;
 }
 #input-log_pw {
     height : 30px;  padding : 5px;
+    width : 85%;
+    border : 0;
+    border-bottom: 2px solid black;
+    outline : none;
 }
 .screen_id {
     padding : 4.5px;
 }
 .member {
     position : relative;
-    left : 600px;
+    left : 58%;
     top : -70px;
 }
 .info {
     position : relative;
     left : 900px;
+    top  : 15px;
 }
 .join {
     float : left;
     position : relative;
     left  :500px;
+    top : 15px;
 }
 a {
     text-decoration: none;
     color : inherit;
+}
+.id_area{
+    position : relative;
+    top : 10%;
+}
+.pw_area{
+    position : relative;
+    top : 15%;
+}
+.loginBtn {
+    background-color: khaki;
+    width : 100%;
+    height : 50px;
+}
+.login{
+    position: relative;
+    top : 40%;
 }
