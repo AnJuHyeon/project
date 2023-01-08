@@ -36,13 +36,18 @@ body{
 }
 #area { 
     position : relative;
-    top: 420px;
-    left:50px;
+    top: 20%;
+    left: 40%;
 }
 #food{
     position: relative;
-    top: 400px;
-    left: -36.5px;
+    top: 25%;
+    left: 22.5%;
+}
+#myform{
+    position: relative;
+    top: 10%;
+    left:32%;
 }
 #myform fieldset {
     display  : inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
@@ -57,10 +62,10 @@ body{
     text-shadow: 0 0 0 #f0f0f0;
 }
 #myform label:hover{
-    text-shadow: 0 0 0 yellow; /* 마우스 호버 */
+    text-shadow: 0 0 0 yellow;
 }
 #myform label:hover ~ label{
-    text-shadow: 0 0 0 yellow; /* 마우스 호버 뒤에오는 이모지들 */
+    text-shadow: 0 0 0 yellow; 
 }
 #myform fieldset{
     display: inline-block; 
@@ -69,4 +74,10 @@ body{
 }
 #myform input[type=radio]:checked ~ label{
     text-shadow: 0 0 0 yellow; /* 마우스 클릭 체크 */
+}
+.submit{
+    background-color: aquamarine;
+    position: relative;
+    left : 37%;
+    top: 20%;
 }
