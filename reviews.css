@@ -78,3 +78,8 @@ a {
     font-size: 20px;
     line-height: 7px;
 }
+.site_name{
+    position : relative;
+    left : 5%;
+    top : 20px;
+}
