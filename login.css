@@ -81,3 +81,6 @@ a {
     position: relative;
     top : 40%;
 }
+#log-btn { 
+    cursor : pointer;
+}
