@@ -16,14 +16,14 @@
     <h2 class="site_name"><a href="project.html">Mat<br>Eat<br>Da </a></h2>
     <div class="container">
         <textarea name="" id="review" cols="65" rows="20" placeholder="리뷰를 남긴 후 별점,지역 그리고 종류를 선택해주세요"></textarea>
-        <select id="area" >
-            <option>지역 선택</option>
-            <option>서울</option>
-            <option>수원</option>
-            <option>제주</option>
-            <option>진주</option>
+        <select  name = "area" id="area" onchange="check_area()" >
+            <option value="">지역 선택</option>
+            <option value="서울">서울</option>
+            <option value="수원">수원</option>
+            <option value="제주">제주</option>
+            <option value="진주">진주</option>
         </select>
-        <select id="food">
+        <select id="food" onchange="check_food()">
             <option>종류 선택</option>
             <option>디저트</option>
             <option>한식</option>
@@ -42,6 +42,6 @@
         </form>
         <input type="submit" class="submit" value="리뷰 작성 완료">
     </div>
-
+<script src="writeReview.js"></script>
 </body>
 </html>
