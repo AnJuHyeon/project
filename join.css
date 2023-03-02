@@ -1,11 +1,28 @@
 @charset "UTF-8";
+body{
+    margin : 0;
+}
 #header p{
     font-size : 20px;
     font-family : 'gowun Dodum', sans-serif;
     margin-top : 50px;
     margin-bottom :2%;
 }
-
+.upbar{
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 70px;
+    background-color: lavender; 
+    font-size : large;
+}
+.site_name{
+    position : absolute;
+    left : 1vw; 
+    line-height: 22px;
+}
 p{
     text-align: center;
 }
@@ -13,31 +30,15 @@ a {
     text-decoration: none;
     color : inherit;
 }
-.site_name {
-    position : relative;
-    top  : 50px;
-    left : 70px;
-}
-.userInput {
-    position : relative;
-    top : 30px;
-}
 .hide{
     display : none;
-}
-
-.container{
-    position : relative;
-    top : 50px;
-    left : 35%;
 }
 fieldset{
     height : 45px;
     width : 400px;
 }
-#join{
-    position : relative;
-    width : 20%;
-    left : 37%;
-    top : 20%;
+
+.box{
+    display : flex;
+    justify-content: center;
 }
