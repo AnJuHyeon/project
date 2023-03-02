@@ -1,14 +1,14 @@
 
-var inputName=document.querySelector("#name")
-var inputId=document.querySelector("#id")
-var inputPw=document.querySelector("#pw")
-var pwCheck=document.querySelector("#pwCheck")
-var nickname=document.querySelector("#nickname")
-var join=document.querySelector("#join")
+let inputName=document.getElementById("name")
+let inputId=document.getElementById("id")
+let inputPw=document.getElementById("pw")
+let pwCheck=document.getElementById("pwCheck")
+let nickname=document.getElementById("nickname")
+let join=document.getElementById("join")
 
-var idFail=document.querySelector(".id_fail")
-var pwCheckFail=document.querySelector(".pwCheck_fail")
-var nicknameFail=document.querySelector(".nickname_fail")
+let idFail=document.querySelector(".id_fail")
+let pwCheckFail=document.querySelector(".pwCheck_fail")
+let nicknameFail=document.querySelector(".nickname_fail")
 
 join.disabled=true;
 
