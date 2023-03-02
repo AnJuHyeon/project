@@ -1,19 +1,26 @@
 .upbar{
-        width : 100%;
-        border-bottom : 3px solid black;
-        height : 50px;
-        background-color: lavender; 
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 70px;
+    background-color: lavender; 
+    font-size : large;
 }
 body{
     margin : 0%;
 }
-.site_name {
-    position : relative;
-    left : 5%;
-    top : 85px;
+.site_name{
+    position : absolute;
+    left : 1vw; 
+    line-height :22px;
+}
+.container{
+    display : flex;
+    justify-content: center;
 }
 .log_area {
-    position : relative;
     border :2px solid grey; padding : 10px;
     width : 450px;
     height :450px;
@@ -21,8 +28,6 @@ body{
     top : -60px;
 }
 .log_title{
-    position : relative;
-    top : -50px;
     font-size : 40px;
     text-align : center;
     font-family: 'Song Myung', serif;
@@ -43,22 +48,6 @@ body{
 }
 .screen_id {
     padding : 4.5px;
-}
-.member {
-    position : relative;
-    left : 58%;
-    top : -70px;
-}
-.info {
-    position : relative;
-    left : 900px;
-    top  : 15px;
-}
-.join {
-    float : left;
-    position : relative;
-    left  :500px;
-    top : 15px;
 }
 a {
     text-decoration: none;
