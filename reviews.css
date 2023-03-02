@@ -1,38 +1,24 @@
 h1{
     text-align: center;
 }
-.to_useguide {
-    float : left; 
-    position : relative;
-    padding-left : 100px;
-    top : 15px;   
-}
-.to_login{
-    float : right;
-    position : relative;
-    padding-right :100px;
-    top : 15px;
-}
 .upbar{
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
     width : 100%;
     border-bottom : 3px solid black;
-    height : 50px;
+    height : 70px;
     background-color: lavender; 
+    font-size : large;
+}
+.site_name{
+    position: absolute;
+    left : 1vw; 
+    line-height : 22px;
+    z-index : 3;
 }
 body{
     margin : 0%;
-}
-.write_review {
-    float : left;
-    position : relative;
-    padding-left : 220px;
-    top : 15px;
-}
-.to_join {
-    float : right;
-    position : relative;
-    padding-right : 235px;
-    top : 15px;
 }
 a {
     text-decoration: none;
@@ -78,8 +64,4 @@ a {
     font-size: 20px;
     line-height: 7px;
 }
-.site_name{
-    position : relative;
-    left : 5%;
-    top : 20px;
-}
+
