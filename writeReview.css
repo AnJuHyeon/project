@@ -14,25 +14,24 @@ a {
     top : -70px;
 }
 .upbar{
-    width : 100%;
-    border-bottom : 3px solid black;
-    height : 50px;
-    background-color: lavender; 
+
+        display : flex;
+        justify-content : space-around;
+        align-items: center;
+        width : 100%;
+        border-bottom : 3px solid black;
+        height : 70px;
+        background-color: lavender; 
+        font-size : large; 
+}
+.site_name{
+    position : absolute;
+    left : 1vw; 
+    line-height : 22px;
+    z-index: 3;
 }
 body{
     margin :0%;
-}
-.to_join {
-    float : right;
-    position : relative;
-    padding-right : 235px;
-    top : 15px;
-}
-.to_useguide {
-    float : left; 
-    position : relative;
-    padding-left : 200px;   
-    top : 15px;
 }
 #area { 
     position : relative;
@@ -84,9 +83,4 @@ body{
 
 #myform label {
     margin : -7px;
-}
-.site_name{
-    position : relative;
-    left : 5%;
-    top : 20px;
 }
