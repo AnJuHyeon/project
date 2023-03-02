@@ -1,0 +1,39 @@
+body{
+    margin :0%;
+}
+a {
+    text-decoration: none;
+    color : inherit;
+}
+.upbar{
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 70px;
+    background-color: lavender; 
+    font-size : large;
+}
+.site_name{
+    position : absolute;
+    left : 1vw; 
+    line-height : 22px;
+    z-index: 3;
+}
+
+.container{
+    margin : 10px, auto;
+
+}
+.image {
+    margin : 0 15% ;
+}
+.text {
+    position: relative;
+    text-align: center;
+    color : skyblue;
+    font-size : 40px;
+    top : -330px;
+    z-index : 3;
+}
