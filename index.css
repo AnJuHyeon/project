@@ -7,7 +7,7 @@ a {
 }
 .upbar{
     display : flex;
-    justify-content : space-around;
+    justify-content : space-between;
     align-items: center;
     width : 100%;
     border-bottom : 3px solid black;
@@ -16,12 +16,19 @@ a {
     font-size : large;
 }
 .site_name{
-    position : absolute;
-    left : 1vw; 
+
     line-height : 22px;
     z-index: 3;
 }
-
+.search_bar{
+    padding : 0.3em;
+    display : inline-block;
+    border : 2px solid;
+    border-radius: 2.5em;
+}
+.submit{
+    border : none;
+}
 .container{
     margin : 10px, auto;
 

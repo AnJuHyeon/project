@@ -3,7 +3,7 @@ h1{
 }
 .upbar{
     display : flex;
-    justify-content : space-around;
+    justify-content : space-between;
     align-items: center;
     width : 100%;
     border-bottom : 3px solid black;
@@ -12,8 +12,6 @@ h1{
     font-size : large;
 }
 .site_name{
-    position: absolute;
-    left : 1vw; 
     line-height : 22px;
     z-index : 3;
 }

@@ -1,6 +1,6 @@
 .upbar{
     display : flex;
-    justify-content : space-around;
+    justify-content : space-between;
     align-items: center;
     width : 100%;
     border-bottom : 3px solid black;
@@ -11,9 +11,7 @@
 body{
     margin : 0%;
 }
-.site_name{
-    position : absolute;
-    left : 1vw; 
+.site_name{ 
     line-height :22px;
 }
 .container{
