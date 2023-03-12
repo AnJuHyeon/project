@@ -1,20 +1,23 @@
-h1{
+ h1{
     text-align : center;
 }
 a {
     text-decoration: none;
     color : inherit;
 }
+body{
+    margin : 0;
+}
 .container{
-    position : relative;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
     border :2px solid black; padding : 10px;
     width : 500px;
     height :500px;
-    left : 500px;
-    top : -70px;
+    margin : 0 auto;
 }
 .upbar{
-
         display : flex;
         justify-content : space-between;
         align-items: center;
@@ -28,23 +31,8 @@ a {
     line-height : 22px;
     z-index: 3;
 }
-body{
-    margin :0%;
-}
-#area { 
-    position : relative;
-    top: 20%;
-    left: 40%;
-}
-#food{
-    position: relative;
-    top: 25%;
-    left: 22.5%;
-}
-#myform{
-    position: relative;
-    top: 10%;
-    left:25%;
+.picture input[type=file]{
+    width : 10vh;
 }
 #myform fieldset {
     display  : inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
@@ -74,11 +62,11 @@ body{
 }
 .submit{
     background-color: aquamarine;
-    position: relative;
-    left : 37%;
-    top: 20%;
 }
 
 #myform label {
+    position: relative;
+    left : -25%;
     margin : -7px;
+
 }

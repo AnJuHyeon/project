@@ -20,19 +20,38 @@ a {
     line-height : 22px;
     z-index: 3;
 }
+.container{
+    display : flex;
+    justify-content: flex-end ;
+}
+form{
+    display : flex;
+    width : 350px;
+    height : 40px;
+}
+form input{
+    flex : 1;
+    border : none;
+    outline : none;
+}
+form button{
+    padding: 10px 50px;
+    border : none;
+    outline : none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .fa-solid fa-magnifying-glass{
+    align-self: center;
+    padding : 10px 20px;
+}
 .search_bar{
     padding : 0.3em;
     display : inline-block;
     border : 2px solid;
     border-radius: 2.5em;
 }
-.submit{
-    border : none;
-}
-.container{
-    margin : 10px, auto;
 
-}
 .image {
     margin : 0 15% ;
 }
@@ -43,4 +62,5 @@ a {
     font-size : 40px;
     top : -330px;
     z-index : 3;
+    user-select: none;
 }

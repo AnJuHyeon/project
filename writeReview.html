@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리뷰 작성</title>
     <link rel="stylesheet" href="writeReview.css">
+    <script src="https://kit.fontawesome.com/5639f15dfd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="upbar">
@@ -32,6 +33,10 @@
             <option>중식</option>
             <option>고기</option>
         </select>
+        <div class="picture">
+            <input type="file" src="" alt="사진 선택" >
+            <i class="fa-solid fa-image"></i>
+        </div>
         <form name="myform" id="myform" method="post" action="./save">
             <fieldset style="width: 133px">
                 <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
