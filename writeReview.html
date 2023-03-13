@@ -18,26 +18,30 @@
 
     <div class="container">
         <textarea name="" id="review" cols="65" rows="20" placeholder="리뷰를 남긴 후 별점,지역 그리고 종류를 선택해주세요"></textarea>
-        <select  name = "area" id="area" onchange="check_area()" >
+        <form method="post" action="./save">
+
+        <select  name = "area" id="area">
             <option value="">지역 선택</option>
             <option value="서울">서울</option>
             <option value="수원">수원</option>
             <option value="제주">제주</option>
             <option value="진주">진주</option>
         </select>
-        <select id="food" onchange="check_food()">
-            <option>종류 선택</option>
-            <option>디저트</option>
-            <option>한식</option>
-            <option>일식</option>
-            <option>중식</option>
-            <option>고기</option>
+        <select id="food"">
+            <option value="">종류 선택</option>
+            <option value="디저트">디저트</option>
+            <option value="한식">한식</option>
+            <option value="일식">일식</option>
+            <option value="중식">중식</option>
+            <option value="양식">양식</option>
+            <option value="고기">고기</option>
+
         </select>
         <div class="picture">
             <input type="file" src="" alt="사진 선택" >
             <i class="fa-solid fa-image"></i>
         </div>
-        <form name="myform" id="myform" method="post" action="./save">
+        <div name="myform" id="myform">
             <fieldset style="width: 133px">
                 <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
                 <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
@@ -45,9 +49,10 @@
                 <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
                 <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
             </fieldset>
-        </form>
+        </div>
         <input type="submit" class="submit" value="리뷰 작성 완료">
     </div>
+</form>
 <script src="writeReview.js"></script>
 </body>
 </html>

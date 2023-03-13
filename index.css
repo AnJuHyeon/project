@@ -50,6 +50,7 @@ form .fa-solid fa-magnifying-glass{
     display : inline-block;
     border : 2px solid;
     border-radius: 2.5em;
+    margin : 5px;
 }
 
 .image {

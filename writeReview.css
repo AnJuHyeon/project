@@ -17,6 +17,19 @@ body{
     height :500px;
     margin : 0 auto;
 }
+form{
+    display : flex;
+    align-items : center;
+    flex-direction: column;
+    margin : 7px;
+}
+form select{
+    margin : 1.5px;
+}
+form picture{
+    margin : 1.5px;
+}
+
 .upbar{
         display : flex;
         justify-content : space-between;
