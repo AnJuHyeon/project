@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <title>회원 가입</title>
     <link rel="stylesheet", href="join.css">
-<style>
-    body {background-color : antiquewhite;} 
-</style>
-
 </head>
 <body>
 <header class="upbar">
@@ -23,40 +19,41 @@
             </h1>
         </div>
 
-
+<form action="">
     <div class="box">    
     <div class="container">
-    <fieldset>
+    <div class="border">
         <label for="name">이름</label>
         <input type="text" id="name">
-    </fieldset>
+    </div>
 
-    <fieldset>
+    <div class="border">
         <label for="id">아이디</label>
         <input type="text" id="id">
         <div class="id_fail hide">6~12글자 사이의 아이디를 입력하시오.</div>
-    </fieldset>
+    </div>
 
-    <fieldset>
+    <div class="border">
         <label for="pw">비밀번호</label>
         <input type="password" id="pw">
-    </fieldset>
+    </div>
 
-    <fieldset>
+    <div class="border">
         <label for="pwCheck">비밀번호 확인</label>
         <input type="password" id="pwCheck">
         <div class="pwCheck_fail hide">비밀번호가 일치하지 않습니다.</div>
-    </fieldset>
-    <fieldset>
+    </div>
+    <div class="border">
         <label for="nickname">별명</label>
         <input type="text" id="nickname">
-        <div class="nickname_fail hide">별명이 입력되지 않앗습니다.</div>
-    </fieldset>
-    <fieldset>
+        <div class="nickname_fail hide">별명이 입력되지 않았습니다.</div>
+    </div>
+    <div class="border">
         <button id="join">회원가입</button>
-    </fieldset>
+    </div>
 </div>
 </div>
+</form>
         <script src="join.js"></script>
 </body>
 </html>
