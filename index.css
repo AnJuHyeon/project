@@ -53,15 +53,30 @@ form .fa-solid fa-magnifying-glass{
     margin : 5px;
 }
 
-.image {
-    margin : 0 15% ;
-}
 .text {
     position: relative;
     text-align: center;
-    color : skyblue;
     font-size : 40px;
-    top : -330px;
     z-index : 3;
     user-select: none;
 }
+h4{
+    padding-left : 15vh;
+}
+.top_10{
+    padding-left: 15vh;
+    width : 170vh;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content:space-between ;
+}
+img{
+    border-radius: 20px;
+    width : 200px;
+    height : 200px;
+
+}
+
+
+
+

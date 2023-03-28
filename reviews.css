@@ -93,6 +93,7 @@ a {
     flex-direction : row;
     justify-content: space-evenly;
     flex-wrap : wrap;
+    margin : 10vh;
 }
 .container img {
     border-radius: 20px;

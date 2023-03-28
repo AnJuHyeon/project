@@ -1,0 +1,33 @@
+img{
+    width : 30vh;
+    height : 30vh;
+    border-radius: 20px;
+}
+
+.container{
+    display : flex;
+    justify-content: space-evenly;
+}
+body{
+    margin : 0%; 
+}
+.upbar{
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    width : 100%;
+    border-bottom : 3px solid black;
+    height : 70px;
+    background-color: lavender; 
+    font-size : large;
+    margin-bottom: 10vh;
+}
+.site_name{
+
+    line-height : 22px;
+    z-index: 3;
+}
+a {
+    text-decoration: none;
+    color : inherit;
+}
