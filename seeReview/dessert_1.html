@@ -12,30 +12,65 @@
         <h2 class="site_name"><a href="../index.html">Mat<br>Eat<br>Da </a></h2>
     </header>
    <div class="container">
-    <h2>사진 및 리뷰</h2>
+            <div id="map" style="width:15%;height:250px;"></div>
+            <div class="main">
     <div class="box">
-    <ul class="picture_gather">
-        <li><img src="../pictures/런던베이글.jpeg" alt="맛집사진"></li>
-        <li><img src="../pictures/런던베이글2.jpeg" alt="맛집사진"></li>
-        <li><img src="../pictures/런던베이글3.jpeg" alt="맛집사진"></li>
+    <ul class="picture_gather main">
+        <li><img class="img 1" src="../pictures/런던베이글.jpeg" alt="맛집사진"></li>
+        <li><img class="img 2" src="../pictures/런던베이글2.jpeg" alt="맛집사진"></li>
+        <li><img class="img 3" src="../pictures/런던베이글3.jpeg" alt="맛집사진"></li>
     </ul>
+    <h2>런던베이글</h2>
+    <div class="review">
+
+        맛집 리뷰
+        <div class="review_1">
+            <div class="reviewer_1">
+                <img class="reviewer" src="../pictures/기본 이미지13.jpg">
+                anju1121
+               <br>
+               별점
+               <br>
+                빵이 굉장히 부드럽고 촉촉합니다!
+                <ul class="picture_gather">
+                <li><img class="img 1" src="../pictures/런던베이글.jpeg" alt="맛집사진"></li>
+                <li><img class="img 2" src="../pictures/런던베이글2.jpeg" alt="맛집사진"></li>
+                <li><img class="img 3" src="../pictures/런던베이글4.jpg" alt="맛집사진"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="review_2">
+            <div class="reviewer_2">
+                <img class="reviewer" src="../pictures/기본 이미지13.jpg">
+                qkrdkw123
+                <br>
+                별점
+                <br>
+                오래 기다린 보람이 있는 맛입니다!
+                <ul class="picture_gather">
+                    <li><img class="img 1" src="../pictures/런던베이글5.jpg" alt="맛집사진"></li>
+                    <li><img class="img 2" src="../pictures/런던베이글6.jpg" alt="맛집사진"></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
 </div>
     <div class="box2">
-        <div class="review">
-            런던베이글 리뷰리뷰
-        </div>
             <div>
             <form>
-    
-            <img id="preview" width="50" height ="50" />
-            <input class="file" type="file" onchange="readURL(this);"> 
+                <textarea name="write_review" id="write_review" cols="67" rows="12 "
+                placeholder="리뷰를 직접 남겨주세요"></textarea>
+
+                <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple>
+                <div id="image_container"></div>
             <br>
             <input class="submit" type="submit" value="리뷰 등록">                           
             </form>
             </div>
+    </div>
         </div>  
-
-   </div>
+    </div>
+   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	99a1b66cdbba8d6100534d9837714ff5&libraries=services"></script>
    <script src="dessert_1.js"></script>
 </body>
 </html>
