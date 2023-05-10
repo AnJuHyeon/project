@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<div class="
+"></div><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,10 +18,15 @@
         </div >
     <div class="main">
         <div class="box">
-            <ul class="picture_gather main">
+            <ul id="upload" class="upload">
                 <li><img class="img 1" src="../pictures/런던베이글.jpeg" alt="맛집사진"></li>
                 <li><img class="img 2" src="../pictures/런던베이글2.jpeg" alt="맛집사진"></li>
                 <li><img class="img 3" src="../pictures/런던베이글3.jpeg" alt="맛집사진"></li>
+                <li class="plusBtn" id="plusBtn">
+                    <a href="#">
+                    <i class="fa-solid fa-plus fa-2x" id="plus" ></i>
+                </li>
+            </a>
             </ul>
     <h2>런던베이글</h2>
     <div class="review">
@@ -38,6 +44,7 @@
                 <li><img class="img 1" src="../pictures/런던베이글.jpeg" alt="맛집사진"></li>
                 <li><img class="img 2" src="../pictures/런던베이글2.jpeg" alt="맛집사진"></li>
                 <li><img class="img 3" src="../pictures/런던베이글4.jpg" alt="맛집사진"></li>
+
                 </ul>
             </div>
         </div>
@@ -60,19 +67,35 @@
     <div class="box2">
             <div>
             <form>
-                <textarea name="write_review" id="write_review" cols="67" rows="12 "
+                <textarea name="write_review" id="write_review" cols="67" rows="12 " maxlength="1000" minlength="1" 
                 placeholder="리뷰를 직접 남겨주세요"></textarea>
 
-                <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple>
-                <div id="image_container"></div>
+                <div name="myform" id="myform">
+                    <fieldset style="width: 133px">
+                        <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
+                        <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
+                        <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">⭐</label>
+                        <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
+                        <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+                    </fieldset>
+                </div>
+                <label for="image">
+                    <div class="uploadBtn">파일 업로드하기</div>
+                </label>
+                <input type="file" id="image"  multiple>
+                <div id="preview"></div>
             <br>
-            <input class="submit" type="submit" value="리뷰 등록">                           
+
+                          
             </form>
+            
+            <button class="submit" type="submit" id="submit">입력</button> 
             </div>
     </div>
         </div>  
     </div>
    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	99a1b66cdbba8d6100534d9837714ff5&libraries=services"></script>
    <script src="dessert_1.js"></script>
+   <script src="https://kit.fontawesome.com/5639f15dfd.js" crossorigin="anonymous"></script>
 </body>
 </html>

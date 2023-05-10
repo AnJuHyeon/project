@@ -6,41 +6,48 @@ a {
     color : inherit;
 }
 .upbar{
+
     display : flex;
     justify-content : space-between;
     align-items: center;
     width : 100%;
     border-bottom : 3px solid black;
     height : 70px;
-    background-color: lavender; 
     font-size : large;
 }
 .site_name{
-
     line-height : 22px;
     z-index: 3;
 }
-.container{
-    display : flex;
-    justify-content: flex-end ;
-}
-form{
+button{
+    width: 22px;
+    height: 22px;
+    background-image: url(https://dcicons.s3.ap-northeast-1.amazonaws.com/new/images/web/react_components/SearchQueryInput/search.png);
+    background-size: 100%;
+    background-color: white;
+    border : none;
+    margin-top : 10px;
+    margin-left : 100px;
+}form{
     display : flex;
     width : 350px;
     height : 40px;
 }
 form input{
+    position : relative;
+    bottom : 5px;
+    width : 60%;
     flex : 1;
     border : none;
     outline : none;
 }
-form button{
-    padding: 10px 50px;
-    border : none;
-    outline : none;
-    letter-spacing: 1px;
-    cursor: pointer;
+
+.container{
+    display : flex;
+    justify-content: flex-end ;
 }
+
+
 form .fa-solid fa-magnifying-glass{
     align-self: center;
     padding : 10px 20px;
@@ -63,9 +70,9 @@ form .fa-solid fa-magnifying-glass{
 h4{
     padding-left : 15vh;
 }
-.top_10{
+.top_8{
     padding-left: 20vh;
-    width : 160vh;
+    width : 1000px;
     display : flex;
     flex-wrap : wrap;
     justify-content:space-between ;

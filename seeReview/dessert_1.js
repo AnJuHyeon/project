@@ -1,16 +1,5 @@
-function setThumbnail(event) {
-  for (var image of event.target.files) {
-    var reader = new FileReader();
 
-    reader.onload = function(event) {
-      var img = document.createElement("img");
-      img.setAttribute("src", event.target.result);
-      document.querySelector("div#image_container").appendChild(img);
-    };
 
-    reader.readAsDataURL(image);
-  }
-}
 
 
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
@@ -35,4 +24,52 @@ marker.setMap(map);
 // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
 // marker.setMap(null);    
 
+function onPopUp(){
+    window.open("dessert_1pics.html", "new",'width=600,height=600 left=400, top=80')
+}
 
+
+
+document.getElementById("image").addEventListener("change", function(event){
+  const imageFiles = event.target.files;
+  const previewDiv = document.getElementById("preview");
+
+  for(let i = 0; i < imageFiles.length; i++){
+     const reader = new FileReader();
+
+     reader.onload = function(event){
+        const imageSrc = event.target.result;
+        const imageElement = document.createElement("img");
+        imageElement.style.width = "22vh";
+        imageElement.style.height = "22vh";
+        imageElement.src = imageSrc;
+        imageElement.classList.add("preview-image");
+
+        previewDiv.appendChild(imageElement);
+     };
+
+     reader.readAsDataURL(imageFiles[i]);
+  }
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+   const previewDiv = document.getElementById("preview");
+   const resultUl = document.getElementById("upload");
+
+   const previewImages = previewDiv.querySelectorAll(".preview-image");
+   for(let i = 0; i < previewImages.length; i++){
+      const imageElement = previewImages[i];
+      imageElement.style.width = "22vh";
+      imageElement.style.height = "22vh";
+
+      const listItem = document.createElement("li");
+      listItem.style.float = "left"; // 이미지를 왼쪽에 정렬하기 위해 float 속성 설정
+      listItem.appendChild(imageElement);
+      resultUl.insertBefore(listItem, resultUl.firstChild); // 첫 번째 자식으로 삽입
+   }
+
+   // 미리보기 영역 비우기
+   previewDiv.innerHTML = "";
+
+  
+});
