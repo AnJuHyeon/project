@@ -43,7 +43,6 @@ li{
     font-size : large;
 }
 #map{
-
     margin-bottom : 50%;
 }
 body{
@@ -148,4 +147,56 @@ ul{
   }
 #image{
     display : none;
+}
+
+.button{
+    background-color: #cef447;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor : pointer;
+}
+.modal {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .bg{
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 3;
+}
+
+.modalBox{
+    position : absolute;
+    background-color: white;
+    width : 400px;
+    height : 200px;
+    padding : 15px;
+    z-index: 4;
+}
+.modalBox button{
+    display : block;
+    width : 80px;
+    margin : 0 auto;
+}
+
+ .hidden{
+    display : none;
+}
+
+
+#plus{
+    margin : 0;
+}
+
+.openBtn{
+    width : 30px;
+    height : 30px;
 }
