@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  build:
+    name: build in local
+    runs-on: self-hosted
+    
+    steps:
+    - name: checkout
+      uses : actions/checkout@v3
