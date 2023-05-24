@@ -43,6 +43,7 @@ li{
     font-size : large;
 }
 #map{
+    margin-left : -60%;
     margin-bottom : 50%;
 }
 body{
@@ -176,10 +177,10 @@ ul{
 .modalBox{
     position : absolute;
     background-color: white;
-    width : 400px;
-    height : 200px;
+    width : 600px;
+    height : 400px;
     padding : 15px;
-    z-index: 4;
+    z-index: 999;
 }
 .modalBox button{
     display : block;
@@ -199,4 +200,18 @@ ul{
 .openBtn{
     width : 30px;
     height : 30px;
+}
+
+.modalBox div{
+    margin-left:45%;
+}
+
+#mainPic img{
+    width : 200px;
+    height : 200px;
+}
+
+.small{
+    width : 60px;
+    height : 60px;
 }

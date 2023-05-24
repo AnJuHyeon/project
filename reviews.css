@@ -8,7 +8,7 @@ h1{
     width : 100%;
     border-bottom : 3px solid black;
     height : 70px;
-    background-color: lavender; 
+
     font-size : large;
 }
 .site_name{
@@ -16,61 +16,6 @@ h1{
     z-index : 3;
 }
 
-input[id="select"]{
-    display : none;
-}
-input[id="select"] + label{
-    display : block;
-    width : 50px;
-    height : 30px;
-    position : fixed;
-    right : 0;
-    cursor : pointer;
-    z-index: 3;
-}
-input[id="select"] +label span{
-    display : block;
-    position : absolute;
-    width : 100%;
-    height: 5px;
-    border-radius: 30px;
-    background : black;
-    transition : all .35s;
-}
-input[id="select"] + label span:nth-child(1){
-    top : 0%
-}
-input[id="select"] + label span:nth-child(2){
-    top : 50%;
-    margin-top: -2.5px;
-}
-input[id="select"] + label span:nth-child(3){
-    bottom : 0;
-}
-input[id="select"]:checked + label span:nth-child(1){
-    top : 50%;
-    transform:translateY(-50%) rotate(45deg);
-}
-input[id="select"]:checked + label span:nth-child(2){
-    opacity: 0;
-}
-input[id="select"]:checked + label span:nth-child(3){
-    top : 50%;
-    transform:translateY(-50%) rotate(-45deg);
-}
-div[class="sidebar"]{
-    width : 200px;
-    height : 90%;
-    background: gainsboro;
-    position : fixed;
-    top : 11%;
-    right : -200px;
-    z-index: 1;
-    transition : all .35s;
-}
-input[id="select"]:checked + label + div {
-    right : 0;
-}
 .area{
     margin-top : 70%;
 }

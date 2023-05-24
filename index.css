@@ -28,7 +28,8 @@ button{
     border : none;
     margin-top : 10px;
     margin-left : 100px;
-}form{
+}
+form{
     display : flex;
     width : 350px;
     height : 40px;

@@ -1,5 +1,4 @@
-<div class="
-"></div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,10 +10,11 @@
 <body>
     <header class="upbar">
         <h2 class="site_name"><a href="../index.html">Mat<br>Eat<br>Da </a></h2>
+        
     </header>
 <div class="container">
             <div style="width:200px; height :100%;position: relative;">
-            <div id="map" style="width : 200px; height : 200px; position:absolute;top:0;" ></div>
+            <div id="map" style="width : 200px; height : 200px; position:relative;top:0;" ></div>
         </div >
     <div class="main">
         <div class="box">
@@ -28,7 +28,16 @@
                 <div class="modal hidden">
                     <div class="bg"></div>
                     <div class="modalBox">
+                        <div id="mainPic"> 
+                            <img src="../pictures/미리보기.jpeg" id="main" >
+                        </div>                   
                         <p>모든 사진이 여기에 저장되어있습니다.</p>
+                        <div id="subPic">
+                            <img src="../pictures/미리보기2.jpeg" class="small">
+                            <img src="../pictures/미리보기3.jpeg" class="small">
+                            <img src="../pictures/기타.jpeg" class="small">
+                        </div>
+
                         <button class="closeBtn">✖</button>
                     </div>
                 </div>
@@ -92,7 +101,7 @@
                 <div id="preview"></div>
             <br>
 
-                          
+                                   
             </form>
             
             <button class="submit" type="submit" id="submit">입력</button> 
