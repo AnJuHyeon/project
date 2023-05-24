@@ -1,4 +1,5 @@
 
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 mapOption = { 
     center: new kakao.maps.LatLng(37.579220, 126.986157), // 지도의 중심좌표
@@ -78,6 +79,18 @@ document.getElementById("submit").addEventListener("click", function() {
   });
 
 
+  const bigPic = document.querySelector("#main");
+  const smallPic = document.querySelectorAll(".small");
+  
+  for(var i=0; i<smallPic.length;i++){
+      smallPic[i].addEventListener("click", changePic);
+    };
+    
+    function changePic() {
+      const newPic = this.src;
+      bigPic.setAttribute("src", newPic);
+    };
+
 const open = function(){   //open button 눌렀을 때 함수
 document.querySelector(".modal").classList.remove("hidden");
 }
@@ -89,14 +102,5 @@ document.querySelector(".openBtn").addEventListener("click", open);//눌렀을 �
 document.querySelector(".closeBtn").addEventListener("click", close);//눌렀을 때 이벤트
 document.querySelector(".bg").addEventListener("click", close);//눌렀을 때 이벤트
 
-const bigPic = document.getElementById("mainPic");
-const smallPic = document.querySelectorAll(".small");
 
-for(const i=0; i<smallPic.length;i++){
-  smallPic[i].onclick = showBig;
-}
 
-function showBig(){
-  const newPic = this.src;
-  bigPic.set
-}

@@ -202,8 +202,10 @@ ul{
     height : 30px;
 }
 
-.modalBox div{
+#mainPic{
     margin-left:30%;
+
+
 }
 
 #mainPic img{
@@ -214,4 +216,9 @@ ul{
 .small{
     width : 60px;
     height : 60px;
+}
+
+#subPic{
+    display : flex;
+    justify-content: center;
 }
