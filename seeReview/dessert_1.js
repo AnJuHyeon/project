@@ -89,3 +89,14 @@ document.querySelector(".openBtn").addEventListener("click", open);//눌렀을 �
 document.querySelector(".closeBtn").addEventListener("click", close);//눌렀을 때 이벤트
 document.querySelector(".bg").addEventListener("click", close);//눌렀을 때 이벤트
 
+const bigPic = document.getElementById("mainPic");
+const smallPic = document.querySelectorAll(".small");
+
+for(const i=0; i<smallPic.length;i++){
+  smallPic[i].onclick = showBig;
+}
+
+function showBig(){
+  const newPic = this.src;
+  bigPic.set
+}
